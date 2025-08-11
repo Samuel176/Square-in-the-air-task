@@ -33,7 +33,7 @@ $color-text: #EDE9E6;
             @content
         }
     }
-    @if $breakpoint == big {
+    @if $breakpoint == xlarge{
         @media (min-width: 75em){
             @content
         }

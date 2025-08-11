@@ -26,7 +26,7 @@
         
         &-img-title{
             width: 50%;
-            @include respond(big){
+            @include respond(xlarge){
                 width: 40%;
             }
             @include respond(large){
@@ -41,8 +41,8 @@
         }
 
         &-text{
-            @include respond(big){
-                width: 50%;
+            @include respond(xlarge){
+                width: 80%;
             }
             @include respond(large){
                 width: 75%;
@@ -58,10 +58,11 @@
 #timer{
     border: solid;
     padding: 1rem;
-    font-size: 5rem;
+    font-size: 3rem;
     backdrop-filter: blur(6px);
+    margin: 2rem 0 ;
 
-    @include respond(big){
+    @include respond(xlarge){
         font-size: 3.5rem;
     }
     @include respond(medium){

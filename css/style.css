@@ -30,10 +30,12 @@ li {
 p {
   text-transform: uppercase;
   font-size: 1rem;
+  text-align: center;
+  backdrop-filter: blur(2px);
 }
 @media (min-width: 75em) {
   p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 75em) {
@@ -49,7 +51,7 @@ p {
   font-weight: 700;
   display: inline-block;
   background-image: linear-gradient(190deg, #252E48 10%, black);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
@@ -81,7 +83,7 @@ p {
 }
 @media (min-width: 75em) {
   .input-box {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 75em) {
@@ -194,7 +196,7 @@ p {
 }
 @media (min-width: 75em) {
   .hero__content-text {
-    width: 50%;
+    width: 80%;
   }
 }
 @media (max-width: 75em) {
@@ -211,8 +213,9 @@ p {
 #timer {
   border: solid;
   padding: 1rem;
-  font-size: 5rem;
+  font-size: 3rem;
   backdrop-filter: blur(6px);
+  margin: 2rem 0;
 }
 @media (min-width: 75em) {
   #timer {

@@ -3,8 +3,10 @@
 p{
     text-transform: uppercase;
     font-size: 1rem;
-    @include respond(big){
-        font-size: 2rem;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    @include respond(xlarge){
+        font-size: 1.8rem;
 
     }
     @include respond(large){
@@ -22,7 +24,7 @@ p{
     font-weight: 700;
     display: inline-block;
     background-image: linear-gradient(190deg , $color-secondary 10% , black);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     letter-spacing: 2px;
     transition: all .2s;
