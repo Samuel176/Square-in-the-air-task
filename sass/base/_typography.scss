@@ -1,0 +1,38 @@
+@use"../abstract/variables" as *;
+
+p{
+    text-transform: uppercase;
+    font-size: 1rem;
+    @include respond(big){
+        font-size: 2rem;
+
+    }
+    @include respond(large){
+        font-size: 1.5rem;
+
+    }
+   
+                
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(190deg , $color-secondary 10% , black);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+
+    @include respond(large){
+        font-size: 2.5rem;
+
+    }
+    @include respond(medium){
+        font-size: 2rem;
+        
+    }
+}

@@ -1,0 +1,74 @@
+@use"../abstract/variables" as *;
+.hero{
+    
+    &__img{
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(180deg, transparentize($color-white, 0.7), transparentize($color-secondary, 0.8)),
+        url(../img/bg_main_landscape.png);
+        background-size: cover;
+        background-position: top;
+        right: 0px;
+        position: absolute;
+        z-index: -1;
+        opacity: 80%;
+
+        @include respond(medium){
+            background-image: linear-gradient(180deg, transparentize($color-white, 0.7), transparentize($color-secondary, 0.8)),
+        url(../img/bg_main_portrait.png);
+        }        
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &-img-title{
+            width: 50%;
+            @include respond(big){
+                width: 40%;
+            }
+            @include respond(large){
+                width: 60%;
+            }
+            @include respond(medium){
+                    width: 70%;
+            }
+            @include respond(small){
+                    width: 100%;
+            }
+        }
+
+        &-text{
+            @include respond(big){
+                width: 50%;
+            }
+            @include respond(large){
+                width: 75%;
+            }
+            @include respond(medium){
+                    width: 90%;
+            }
+             
+        }
+    }
+}
+
+#timer{
+    border: solid;
+    padding: 1rem;
+    font-size: 5rem;
+    backdrop-filter: blur(6px);
+
+    @include respond(big){
+        font-size: 3.5rem;
+    }
+    @include respond(medium){
+        font-size: 3rem;
+    }
+
+    @include respond(small){
+        font-size: 2rem;
+    }
+}

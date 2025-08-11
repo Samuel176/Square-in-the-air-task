@@ -1,0 +1,41 @@
+
+// colors
+$color-white: #fff;
+$color-primary: #D7AB7A;
+$color-primary-light:#F1CAA4;
+$color-secondary: #252E48;
+$color-secondary-light: #5468a3;
+$color-text: #EDE9E6;
+
+
+// media quiry 
+
+// sizing for breakpoints
+
+// 0 - 400px - small
+// 600 - 900 px - Medium
+// 900 - 1200px - large
+// 1200-1800px - big
+
+@mixin respond($breakpoint){
+    @if $breakpoint == small {
+        @media (max-width: 37.5em){
+            @content 
+        } //600px
+    }
+    @if $breakpoint == medium {
+        @media (max-width: 56.25em){
+            @content
+        }
+    }
+    @if $breakpoint == large {
+        @media (max-width: 75em){
+            @content
+        }
+    }
+    @if $breakpoint == big {
+        @media (min-width: 75em){
+            @content
+        }
+    }
+}
