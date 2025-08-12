@@ -1,5 +1,5 @@
-const countDownDate = new Date("Aug 10, 2025 10:00:00").getTime();
-// "Aug 20, 2025 10:00:00"
+const countDownDate = new Date("Aug 20, 2025 10:00:00").getTime();
+// "Aug 20, 2025 10:00:00" 
 const time = setInterval(function(){
 
     let currentTime = new Date().getTime();
@@ -21,4 +21,5 @@ const time = setInterval(function(){
     document.getElementById("form-finished").style.display = "none";
   }
 }, 100)
+
 
